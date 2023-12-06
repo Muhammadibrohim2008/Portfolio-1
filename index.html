@@ -1,12 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <span>M</span>uha<span>mm</span>adibrohi<span>m</span>.
+      </div>
+      <ul class="navlist">
+        <li><a href="#home" style="--i:1;">Home</a></li>
+        <li><a href="#about" style="--i:2;">About</a></li>
+        <li><a href="#services" style="--i:3;">Services</a></li>
+        <li><a href="#skills" style="--i:4;">Skills</a></li>
+        <li><a href="#portfolio" style="--i:5;">Portfolio</a></li>
+        <li><a href="#contact" style="--i:6;">Contact</a></li>
+      </ul>
+      <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- home section -->
+    <section id="home" class="home">
+      <div class="home-content scroll-scale">
+        <h1>Hi! I'm Muhammadibrohim</h1>
+        <div class="change-text">
+          <h3>And I'm</h3>
+          <h3>
+            <span class="word">Youtuber</span>
+            <span class="word">Web&nbsp;Designer</span>
+            <span class="word">Frontend&nbsp;Developer</span>
+            <span class="word">UX/UI&nbsp;developer</span>
+            <span class="word">Graphic&nbsp;Designer</span>
+          </h3>
+        </div>
+
+        <p>
+          Product Designer and Degital Creative Director working in design field
+          for 10 years so far.specialized in UI/UX Branding and digital designs.
+        </p>
+
+        <div class="info-box">
+          <div class="email-info">
+            <h5>Email :</h5>
+            <span>abdunabiyevmuhammadibrohim8@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <a href="images/1.jpg" download class="btn">Download CV</a>
+          <a href="#"  class="btn">Hire Me Now!</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-dribbble"></i></a>
+        </div>
+      </div>
+
+      <div class="home-image scroll-scale">
+        <div class="img-box">
+          <img src="images/man.png" alt="Rasm" />
+        </div>
+        <div class="liquid-shape">
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <path fill="#12f7ff">
+              <animate
+                attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="
+                    
+                    M393.5,287.5Q380,325,363,371Q346,417,298,412Q250,407,197.5,419.5Q145,432,106,394Q67,356,70,303Q73,250,73,199Q73,148,108.5,107Q144,66,197,52Q250,38,298,61Q346,84,404.5,105.5Q463,127,435,188.5Q407,250,393.5,287.5Z;
+
+                    M445.79807,300.05154Q423.23307,350.10307,404.83846,417.71961Q386.44384,485.33615,318.22192,462.90346Q250,440.47077,207.95961,418.10538Q165.91923,395.74,137.37884,363.31846Q108.83846,330.89693,41.41039,290.44846Q-26.01768,250,6.75578,189.23769Q39.52923,128.47539,100.13231,111.88115Q160.73538,95.28692,205.36769,107.0873Q250,118.88768,293.11885,109.11423Q336.23769,99.34077,385.67269,120.84077Q435.1077,142.34077,451.73538,196.17038Q468.36307,250,445.79807,300.05154Z;
+
+                    M415.5,296Q409,342,372,369Q335,396,292.5,445.5Q250,495,196.5,465.5Q143,436,90,404.5Q37,373,33.5,311.5Q30,250,36,190Q42,130,93,98Q144,66,197,68.5Q250,71,311,55Q372,39,413,85.5Q454,132,438,191Q422,250,415.5,296Z;
+
+                    M413.02333,294.514Q404.04666,339.028,372.99067,374.44867Q341.93467,409.86934,295.96734,406.36864Q250,402.86793,197.986,416.46196Q145.972,430.056,119.72002,385.18199Q93.46804,340.30798,53.80868,295.15399Q14.14932,250,26.09333,189.00933Q38.03733,128.01867,82.10266,82.14932Q126.16799,36.27998,188.08399,26.39664Q250,16.51329,300.59799,45.09333Q351.19598,73.67336,395.66332,106.79935Q440.13066,139.92534,431.06533,194.96267Q422,250,413.02333,294.514Z;
+
+                    M440.79438,299.2198Q420.78151,348.4396,375.62211,368.73135Q330.46271,389.02311,290.23135,394.46271Q250,399.90231,192.23135,425.4396Q134.46271,450.97689,119.47558,392.34191Q104.48845,333.70693,95.42936,291.85347Q86.37028,250,71.62474,194.24422Q56.8792,138.48845,100.8792,103.50132Q144.8792,68.51418,197.4396,61.1363Q250,53.75841,296.30462,71.74554Q342.60924,89.73267,380.81617,121.1594Q419.02311,152.58614,439.91518,201.29307Q460.80725,250,440.79438,299.2198Z;
+                    
+                    M457.00608,309.3445Q455.80789,368.689,391.81248,376.95731Q327.81708,385.22561,288.90854,415.689Q250,446.15239,198.86585,436.5381Q147.73169,426.92381,129.44664,378.47258Q111.16158,330.02135,97.47865,290.01067Q83.79573,250,65.52135,191.61281Q47.24696,133.22561,106.76371,118.81248Q166.28046,104.39935,208.14023,69.8445Q250,35.28965,291.32775,71.29573Q332.6555,107.30181,382.6936,126.07012Q432.73169,144.83842,445.46798,197.41921Q458.20427,250,457.00608,309.3445Z;
+
+                    M422.46499,293.8766Q400.87105,337.7532,371.60312,373.42357Q342.33518,409.09394,296.16759,451.67037Q250,494.2468,188.65008,478.53501Q127.30017,462.82323,100.63258,407.06448Q73.96499,351.30572,67.82963,300.65286Q61.69428,250,63.10589,196.57643Q64.51751,143.15286,114.07643,121.60589Q163.63535,100.05892,206.81768,91.32045Q250,82.58198,317.88215,49.19428Q385.76431,15.80657,374.63535,99.61785Q363.5064,183.42912,403.78266,216.71456Q444.05892,250,422.46499,293.8766Z;
+
+                    M393.5,287.5Q380,325,363,371Q346,417,298,412Q250,407,197.5,419.5Q145,432,106,394Q67,356,70,303Q73,250,73,199Q73,148,108.5,107Q144,66,197,52Q250,38,298,61Q346,84,404.5,105.5Q463,127,435,188.5Q407,250,393.5,287.5Z;
+                    "
+              ></animate>
+            </path>
+          </svg>
+        </div>
+        <div class="liquid-shape">
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <path fill="#12f7ff">
+              <animate
+                attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="
+                    
+                    M393.5,287.5Q380,325,363,371Q346,417,298,412Q250,407,197.5,419.5Q145,432,106,394Q67,356,70,303Q73,250,73,199Q73,148,108.5,107Q144,66,197,52Q250,38,298,61Q346,84,404.5,105.5Q463,127,435,188.5Q407,250,393.5,287.5Z;
+
+                    M445.79807,300.05154Q423.23307,350.10307,404.83846,417.71961Q386.44384,485.33615,318.22192,462.90346Q250,440.47077,207.95961,418.10538Q165.91923,395.74,137.37884,363.31846Q108.83846,330.89693,41.41039,290.44846Q-26.01768,250,6.75578,189.23769Q39.52923,128.47539,100.13231,111.88115Q160.73538,95.28692,205.36769,107.0873Q250,118.88768,293.11885,109.11423Q336.23769,99.34077,385.67269,120.84077Q435.1077,142.34077,451.73538,196.17038Q468.36307,250,445.79807,300.05154Z;
+
+                    M415.5,296Q409,342,372,369Q335,396,292.5,445.5Q250,495,196.5,465.5Q143,436,90,404.5Q37,373,33.5,311.5Q30,250,36,190Q42,130,93,98Q144,66,197,68.5Q250,71,311,55Q372,39,413,85.5Q454,132,438,191Q422,250,415.5,296Z;
+
+                    M413.02333,294.514Q404.04666,339.028,372.99067,374.44867Q341.93467,409.86934,295.96734,406.36864Q250,402.86793,197.986,416.46196Q145.972,430.056,119.72002,385.18199Q93.46804,340.30798,53.80868,295.15399Q14.14932,250,26.09333,189.00933Q38.03733,128.01867,82.10266,82.14932Q126.16799,36.27998,188.08399,26.39664Q250,16.51329,300.59799,45.09333Q351.19598,73.67336,395.66332,106.79935Q440.13066,139.92534,431.06533,194.96267Q422,250,413.02333,294.514Z;
+
+                    M440.79438,299.2198Q420.78151,348.4396,375.62211,368.73135Q330.46271,389.02311,290.23135,394.46271Q250,399.90231,192.23135,425.4396Q134.46271,450.97689,119.47558,392.34191Q104.48845,333.70693,95.42936,291.85347Q86.37028,250,71.62474,194.24422Q56.8792,138.48845,100.8792,103.50132Q144.8792,68.51418,197.4396,61.1363Q250,53.75841,296.30462,71.74554Q342.60924,89.73267,380.81617,121.1594Q419.02311,152.58614,439.91518,201.29307Q460.80725,250,440.79438,299.2198Z;
+                    
+                    M457.00608,309.3445Q455.80789,368.689,391.81248,376.95731Q327.81708,385.22561,288.90854,415.689Q250,446.15239,198.86585,436.5381Q147.73169,426.92381,129.44664,378.47258Q111.16158,330.02135,97.47865,290.01067Q83.79573,250,65.52135,191.61281Q47.24696,133.22561,106.76371,118.81248Q166.28046,104.39935,208.14023,69.8445Q250,35.28965,291.32775,71.29573Q332.6555,107.30181,382.6936,126.07012Q432.73169,144.83842,445.46798,197.41921Q458.20427,250,457.00608,309.3445Z;
+
+                    M422.46499,293.8766Q400.87105,337.7532,371.60312,373.42357Q342.33518,409.09394,296.16759,451.67037Q250,494.2468,188.65008,478.53501Q127.30017,462.82323,100.63258,407.06448Q73.96499,351.30572,67.82963,300.65286Q61.69428,250,63.10589,196.57643Q64.51751,143.15286,114.07643,121.60589Q163.63535,100.05892,206.81768,91.32045Q250,82.58198,317.88215,49.19428Q385.76431,15.80657,374.63535,99.61785Q363.5064,183.42912,403.78266,216.71456Q444.05892,250,422.46499,293.8766Z;
+
+                    M393.5,287.5Q380,325,363,371Q346,417,298,412Q250,407,197.5,419.5Q145,432,106,394Q67,356,70,303Q73,250,73,199Q73,148,108.5,107Q144,66,197,52Q250,38,298,61Q346,84,404.5,105.5Q463,127,435,188.5Q407,250,393.5,287.5Z;
+                    "
+              ></animate>
+            </path>
+          </svg>
+        </div>
+      </div>
+      
+    </section>
+
+      <!-- about section -->
+
+      <section id="about" class="about">
+        <div class="img-about scroll-scale">
+          <img src="images/about-me-pic2.png" alt="Rasm" />
+          <div class="info-about1">
+            <span>10+</span>
+            <p>Years of Experience</p>
+          </div>
+          <div class="info-about2">
+            <span>150+</span>
+            <p>Project Complete</p>
+          </div>
+          <div class="info-about3">
+            <span>200+</span>
+            <p>Happy Cionts</p>
+          </div>
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of good</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere reiciendis deserunt consectetur! Cumque, dignissimos quaerat sequi esse ab tempore nobis molestias nostrum minima dolores velit illum laborum! Cupiditate, exercitationem?</p>
+            <div class="btn-box">
+              <a href="#" class="btn">Read More!</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- services section -->
+
+      <section id="services" class="services">
+        <div class="main-text scroll-scale">
+          <span>what i will do for you</span>
+          <h2>Our Services</h2>
+        </div>
+        <div class="section-services scroll-bottom">
+          <div class="service-box">
+            <i class='bx bxs-layer service-icon'></i>
+            <h3>Graphic Designer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis est minus id. Labore nemo saepe accusantium nobis quas in.</p>
+            <div class="btn-box service-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class='bx bx-code-alt service-icon' ></i>
+            <h3>Graphic Designer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis est minus id. Labore nemo saepe accusantium nobis quas in.</p>
+            <div class="btn-box service-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class='bx bx-desktop service-icon' ></i>
+            <h3>Graphic Designer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis est minus id. Labore nemo saepe accusantium nobis quas in.</p>
+            <div class="btn-box service-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skill section -->
+
+      <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+          <span>technical and professional</span>
+          <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+          <div class="skill-left scroll-scale">
+            <h3>Technical Skills</h3>
+            <div class="skill-bar">
+              <div class="info">
+                <p>HTML</p>
+                <p>95%</p>
+              </div>
+              <div class="bar">
+                <span class="html"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="info">
+                <p>Figma</p>
+                <p>90%</p>
+              </div>
+              <div class="bar">
+                <span class="figma"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="info">
+                <p>JavaScript</p>
+                <p>85%</p>
+              </div>
+              <div class="bar">
+                <span class="javascript"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="info">
+                <p>CSS</p>
+                <p>85%</p>
+              </div>
+              <div class="bar">
+                <span class="css"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-right scroll-scale">
+            <h3>Professional Skills</h3>
+            <div class="porfessional">
+
+                  <div class="box">
+                    <div class="circle" data-dots="80" data-percent="90"></div>
+                    <div class="text">
+                      <big>90%</big>
+                      <small>Team Work</small>
+                    </div>
+                  </div>
+
+                  <div class="box">
+                    <div class="circle" data-dots="80" data-percent="80"></div>
+                    <div class="text">
+                      <big>80%</big>
+                      <small>Creativity</small>
+                    </div>
+                  </div>
+                    
+                  <div class="box">
+                      <div class="circle" data-dots="80" data-percent="55"></div>
+                      <div class="text">
+                        <big>55%</big>
+                        <small>Project Mangement</small>
+                      </div>
+                  </div>
+
+                  <div class="box">
+                    <div class="circle" data-dots="80" data-percent="70"></div>
+                    <div class="text">
+                      <big>70%</big>
+                      <small>Comiunication</small>
+                    </div>
+                  </div>
+            
+            </div>
+          </div>
+      </section>
+
+      <!-- portfolio section -->
+
+      <section id="portfolio" class="portfolio">
+
+        <div class="main-text scroll-scale">
+          <span>What i will do for you</span>
+          <h2>Latest Project</h2>
+        </div>
+
+        <div class="container">
+
+          <div class="fillter-buttons scroll-scale">
+            <button class="button" data-filter="all">All</button>
+            <button class="button" data-filter=".product">Product</button>
+            <button class="button" data-filter=".inter">Interacting</button>
+            <button class="button" data-filter=".web">Web App</button>
+          </div>
+
+          <div class="portfolio-gallery scroll-bottom">
+
+            <div class="port-box mix product">
+              <div class="port-image">
+                <img src="images/1.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix web">
+              <div class="port-image">
+                <img src="images/2.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix product">
+              <div class="port-image">
+                <img src="images/3.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix web">
+              <div class="port-image">
+                <img src="images/4.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix web">
+              <div class="port-image">
+                <img src="images/5.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/6.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/1.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/2.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/3.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/4.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/5.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+            <div class="port-box mix inter">
+              <div class="port-image">
+                <img src="images/6.jpg" alt="Rasm">
+              </div>
+              <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non aspernatur blanditiis nulla exercitationem.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- contact section -->
+
+      <section id="contact" class="contant">
+
+        <div class="main-text scroll-scale">
+          <span>ask me question</span>
+          <h2>Contact Me</h2>
+        </div>
+
+        <form action="#" class="scroll-bottom">
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your Email">
+          <input type="text" placeholder="Your Address">
+          <input type="number" placeholder="Phone Number">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <div class="btn-box formBtn">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+
+      </section>
+
+      <!-- footer website -->
+
+      <footer>
+        <p class="scroll-scale">Copyright &copy; 2023 by ParsCoder || All Right Reservd.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </footer>
+    <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
